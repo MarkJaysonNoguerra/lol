@@ -118,8 +118,13 @@
               "devServerTarget": "lol-by-jumpyDev:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "lol-by-jumpyDev"
 }

@@ -1,0 +1,98 @@
+/*
+color palette
+    #2c5ffa
+    #80bcfa
+    #0c0c1c
+    #7a6a96
+    #bc9b92
+    #0c0c14
+*/
+.card {
+    color: white;
+    padding: 1rem;
+    height: 85%;
+    border-radius: 5px;
+}
+.cards {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(85%, 1fr));
+}
+.text-light{ color: #fff }
+.title{ 
+    letter-spacing: .3em; 
+    text-transform: uppercase;
+}
+
+.font-2{
+	font-family: 'josefin sans';
+    font-weight: 700;
+    font-size : 4rem;
+    margin : auto;
+}
+.sub-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin : auto;
+    color : #80bcfa;
+}
+.lore {
+    font-size : 1.05rem;
+    margin : auto;
+    text-align: justify;
+    text-justify: inter-word;
+    color : #bc9b92;
+    margin-bottom : 30px;
+}
+.example_e {
+    border: none;
+    background: #80bcfa;
+    color: #0c0c14;
+    font-weight: 100;
+    padding: 10px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.skin-name { 
+    font-size: 2.5rem;
+    margin-bottom : 20px;
+}
+.spell { 
+    position: relative;
+    top: 0px;
+    right: 0px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+}
+.grid-container {
+    max-width: 1000px;
+    display: flex;
+    grid-gap: 1rem;
+    flex-wrap: wrap;
+}
+.card-spell {
+    color: white;
+    padding: 1rem;
+    flex: 2 20%;
+    /* height: 25%; */
+    width: 100%; 
+}
+@media only screen and (max-width: 600px) {
+    .font-2{
+        font-size : 2rem;
+    }
+    .sub-title {
+        font-size : 1rem;
+    }
+    .skin-name {
+        font-size: 1.25rem;
+    }
+    .lore {
+        font-size : 0.75rem;
+    }
+}
