@@ -1,0 +1,18 @@
+<div class="cards" >
+    <div class="card" *ngFor="let item of items | keyvalue">
+        <!-- {{champion.key}} -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://ddragon.leagueoflegends.com/cdn/{{version}}/img/item/{{item.key}}.png" alt="" width="100%" height="100%">
+                <!-- <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">   -->
+              </div>
+              <div class="flip-card-back">
+                <h3>{{item.value.name}}</h3> 
+                <!-- <p>{{champion.value.title}}</p> -->
+                <p [innerHTML]="item.value.description"></p>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

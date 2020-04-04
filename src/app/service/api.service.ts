@@ -35,4 +35,11 @@ export class ApiService {
       })
     )
   }
+  getItems(version) {
+    return this.http.get(this.baseUrl + 'cdn/' + version + '/data/en_US/item.json').pipe(
+      map((response: any) => {
+        return response;
+      })
+    )
+  }
 }

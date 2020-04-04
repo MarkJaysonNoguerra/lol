@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './main/main.component';
 import { ChampionComponent } from './champion/champion.component';
+import { ItemsComponent } from './items/items.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    ChampionComponent
+    ChampionComponent,
+    ItemsComponent
   ],
   imports: [
     BrowserModule,
